@@ -1,0 +1,6 @@
+framework module PLOP {
+  umbrella header "PLOP-umbrella.h"
+
+  export *
+  module * { export * }
+}
