@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Bundle Installation check
           command: |
-            # bundle install
+           
             echo 'Bundle Installation Check Done!'
       
       - run:
