@@ -1,0 +1,6 @@
+app_identifier("com.dennis-hong.Find-Study-Group") # The bundle identifier of your app
+apple_id("ghdwjdvy1996") # Your Apple email address
+
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
