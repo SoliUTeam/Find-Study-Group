@@ -7,8 +7,8 @@ jobs:
       - checkout
       - run:
           name: Bundle Installation check
-          bundle install
           command: |
+            bundle install
             echo 'Bundle Installation Check Done!'
       
       - run:
