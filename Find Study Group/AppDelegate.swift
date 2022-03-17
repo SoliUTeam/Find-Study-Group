@@ -15,10 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 #if DEBUG
-        let component1 = SwitchPLOPComponent(title: "Prototype show",
-                                            action: { component in /* Execute whatever you want here! */ })
-        let component2 = SwitchPLOPComponent(title: "Prototype2 show",
-                                            action: { component in /* Execute whatever you want here! */ })
+        let component1 = SwitchPLOPComponent(title: FeatureFlag.homeScreen.rawValue,
+                                            action: { component in })
+        let component2 = SwitchPLOPComponent(title: FeatureFlag.message.rawValue,
+                                            action: { component in })
         let section = SectionPLOPComponent(
             title: "Feature Flags",
             components: [ component1, component2 ],

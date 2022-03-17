@@ -9,24 +9,29 @@
 /* Begin PBXBuildFile section */
 		95E4E2EF27BDEFE0002EBDA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4E2EE27BDEFE0002EBDA0 /* AppDelegate.swift */; };
 		95E4E2F127BDEFE0002EBDA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4E2F027BDEFE0002EBDA0 /* SceneDelegate.swift */; };
-		95E4E2F327BDEFE0002EBDA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4E2F227BDEFE0002EBDA0 /* ViewController.swift */; };
+		95E4E2F327BDEFE0002EBDA0 /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4E2F227BDEFE0002EBDA0 /* StudyViewController.swift */; };
 		95E4E2F627BDEFE1002EBDA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E4E2F427BDEFE1002EBDA0 /* Main.storyboard */; };
 		95E4E2F827BDEFE7002EBDA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E4E2F727BDEFE7002EBDA0 /* Assets.xcassets */; };
 		95E4E2FB27BDEFE7002EBDA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E4E2F927BDEFE7002EBDA0 /* LaunchScreen.storyboard */; };
+		95E4E30627E194E0002EBDA0 /* FeatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4E30527E194E0002EBDA0 /* FeatureProvider.swift */; };
+		95E4E30927E2FE54002EBDA0 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4E30827E2FE54002EBDA0 /* MessageViewController.swift */; };
 		D97795F68769F279A6974BEC /* Pods_Find_Study_Group.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E667563DEF497C9662175A96 /* Pods_Find_Study_Group.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		493D76FBC0B44ABDB7D8F906 /* Pods-Find Study Group.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find Study Group.release.xcconfig"; path = "Target Support Files/Pods-Find Study Group/Pods-Find Study Group.release.xcconfig"; sourceTree = "<group>"; };
 		5D85F36AC43FD93ADCB9D98B /* Pods-Find Study Group.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find Study Group.debug.xcconfig"; path = "Target Support Files/Pods-Find Study Group/Pods-Find Study Group.debug.xcconfig"; sourceTree = "<group>"; };
+		955F0BAA27E307E400E40A74 /* noMessage.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = noMessage.json; sourceTree = "<group>"; };
 		95E4E2EB27BDEFE0002EBDA0 /* Find Study Group.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Study Group.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E4E2EE27BDEFE0002EBDA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E4E2F027BDEFE0002EBDA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95E4E2F227BDEFE0002EBDA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95E4E2F227BDEFE0002EBDA0 /* StudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
 		95E4E2F527BDEFE1002EBDA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95E4E2F727BDEFE7002EBDA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95E4E2FA27BDEFE7002EBDA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95E4E2FC27BDEFE7002EBDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95E4E30527E194E0002EBDA0 /* FeatureProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureProvider.swift; sourceTree = "<group>"; };
+		95E4E30827E2FE54002EBDA0 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		E667563DEF497C9662175A96 /* Pods_Find_Study_Group.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_Study_Group.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +53,6 @@
 				5D85F36AC43FD93ADCB9D98B /* Pods-Find Study Group.debug.xcconfig */,
 				493D76FBC0B44ABDB7D8F906 /* Pods-Find Study Group.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +85,58 @@
 		95E4E2ED27BDEFE0002EBDA0 /* Find Study Group */ = {
 			isa = PBXGroup;
 			children = (
+				95E4E30C27E301A1002EBDA0 /* AnimationJson */,
 				95E4E2EE27BDEFE0002EBDA0 /* AppDelegate.swift */,
 				95E4E2F027BDEFE0002EBDA0 /* SceneDelegate.swift */,
-				95E4E2F227BDEFE0002EBDA0 /* ViewController.swift */,
-				95E4E2F427BDEFE1002EBDA0 /* Main.storyboard */,
-				95E4E2F727BDEFE7002EBDA0 /* Assets.xcassets */,
-				95E4E2F927BDEFE7002EBDA0 /* LaunchScreen.storyboard */,
+				95E4E30427DEBA03002EBDA0 /* StoryBoard */,
+				95E4E30327DEB9DD002EBDA0 /* MainScreen */,
+				95E4E30727E2FE2A002EBDA0 /* MessageScreen */,
+				95E4E30227DEB9D0002EBDA0 /* Asset */,
 				95E4E2FC27BDEFE7002EBDA0 /* Info.plist */,
+				95E4E30527E194E0002EBDA0 /* FeatureProvider.swift */,
 			);
 			path = "Find Study Group";
+			sourceTree = "<group>";
+		};
+		95E4E30227DEB9D0002EBDA0 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				95E4E2F727BDEFE7002EBDA0 /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		95E4E30327DEB9DD002EBDA0 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				95E4E2F227BDEFE0002EBDA0 /* StudyViewController.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		95E4E30427DEBA03002EBDA0 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				95E4E2F427BDEFE1002EBDA0 /* Main.storyboard */,
+				95E4E2F927BDEFE7002EBDA0 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		95E4E30727E2FE2A002EBDA0 /* MessageScreen */ = {
+			isa = PBXGroup;
+			children = (
+				95E4E30827E2FE54002EBDA0 /* MessageViewController.swift */,
+			);
+			path = MessageScreen;
+			sourceTree = "<group>";
+		};
+		95E4E30C27E301A1002EBDA0 /* AnimationJson */ = {
+			isa = PBXGroup;
+			children = (
+				955F0BAA27E307E400E40A74 /* noMessage.json */,
+			);
+			path = AnimationJson;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95E4E2F327BDEFE0002EBDA0 /* ViewController.swift in Sources */,
+				95E4E2F327BDEFE0002EBDA0 /* StudyViewController.swift in Sources */,
 				95E4E2EF27BDEFE0002EBDA0 /* AppDelegate.swift in Sources */,
 				95E4E2F127BDEFE0002EBDA0 /* SceneDelegate.swift in Sources */,
+				95E4E30627E194E0002EBDA0 /* FeatureProvider.swift in Sources */,
+				95E4E30927E2FE54002EBDA0 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +410,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Find Study Group/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SoliU;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -389,6 +439,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Find Study Group/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SoliU;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

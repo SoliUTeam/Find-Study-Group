@@ -2,25 +2,25 @@ import ProjectDescription
 
 // 1
 let project = Project(
-    name: "Find Study Group",
+    name: "FindStudyGroup",
     organizationName: "SoliU",
     settings: nil,
     targets: [
         Target(
             // 2
-            name: "MovieInfo",
+            name: "FindStudyGroup",
             // 3
             platform: .iOS,
             // 4
             product: .app,
             // 5
-            bundleId: "<YOUR_BUNDLE_ID_HERE>",
+            bundleId: "com.dennis-hong.Find-Study-Group",
             // 6
-            infoPlist: "MovieInfo/Info.plist",
+            infoPlist: "Find-Study-Group/Info.plist",
             // 7
-            sources: ["MovieInfo/Source/**"],
+            sources: ["Find-Study-Group/Asset/**"],
             // 8
-            resources: ["MovieInfo/Resources/**"],
+            resources: ["Find Study Group/Resources/**"],
             // 9
             dependencies: [],
             // 10
