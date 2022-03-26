@@ -1,4 +1,8 @@
-# Find-Study-Group [![Join the chat at https://gitter.im/Soliu-Team/community](https://badges.gitter.im/Soliu-Team/community.svg)](https://gitter.im/Soliu-Team/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Find-Study-Group
+
+If you are interest in our research or want to left for comments, visit gitter here
+
+[![Join the chat at https://gitter.im/Soliu-Team/community](https://badges.gitter.im/Soliu-Team/community.svg)](https://gitter.im/Soliu-Team/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 <p align="center">
 Welcome to our Repository 
