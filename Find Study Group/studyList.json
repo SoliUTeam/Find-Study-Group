@@ -1,0 +1,47 @@
+{
+    "studyList": [
+        {
+            "title": "title 1",
+            "studyDescription": "studyDescription 1",
+            "thumbnail": "example",
+            "currentCount": 1,
+            "fullCount": 10
+        },
+        {
+            "title": "title 2",
+            "studyDescription": "studyDescription 2",
+            "thumbnail": "example",
+            "currentCount": 1,
+            "fullCount": 4
+        },
+        {
+            "title": "title 1",
+            "studyDescription": "studyDescription 3",
+            "thumbnail": "example",
+            "currentCount": 1,
+            "fullCount": 9
+        },
+        {
+            "title": "title 1",
+            "studyDescription": "studyDescription 4",
+            "thumbnail": "example",
+            "currentCount": 1,
+            "fullCount": 10
+        },
+        {
+            "title": "title 2",
+            "studyDescription": "studyDescription 5",
+            "thumbnail": "example",
+            "currentCount": 5,
+            "fullCount": 10
+        },
+        {
+            "title": "title 1",
+            "studyDescription": "studyDescription 6",
+            "thumbnail": "example",
+            "currentCount": 2,
+            "fullCount": 5
+        }
+    ]
+}
+

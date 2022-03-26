@@ -9,22 +9,34 @@ import UIKit
 
 class StudyViewController: UIViewController {
 
-    @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var tableView: UITableView! {
+        didSet {
+            self.tableView.delegate = self
+            self.tableView.dataSource = self
+        }
+    }
     
+    lazy var viewModel = StudyViewModel(delegate: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        viewModel.populateTestDataFromJson()
     }
 }
 
-extension StudyViewController: UITableViewDelegate, UITableViewDataSource {
+extension StudyViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        viewModel.numberOfRow()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        viewModel.configureTestCell(in: tableView, for: indexPath)
+    }
+}
+
+extension StudyViewController: StudyViewModelDelegate {
+    func reload() {
+        self.tableView.reloadData()
     }
 }
