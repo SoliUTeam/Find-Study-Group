@@ -9,7 +9,7 @@ pod 'SnapKit'
 pod 'lottie-ios'
 pod 'RxSwift'
 pod 'RxCocoa'
-
+pod 'SnapKit', '~> 5.0.0'
   # Pods for Find Study Group
 
 end

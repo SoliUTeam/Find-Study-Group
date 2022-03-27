@@ -14,7 +14,8 @@ protocol StudyViewModelDelegate: AnyObject {
 
 class StudyViewModel {
     
-    private var studyDataSource = [StudyModel]()
+     var studyDataSource = [StudyModel]()
+    private var collectionDataSource: [String] = ["Computer", "Social", "Bio", "Chemistry", "Book", "eSports", "Language"]
     
     init(delegate: StudyViewModelDelegate) {
         self.delegate = delegate
@@ -22,12 +23,13 @@ class StudyViewModel {
     
     weak var delegate: StudyViewModelDelegate?
     
+    //MARK: - TableView Logic
     func numberOfRow() -> Int {
         studyDataSource.count
     }
     
-    func populateTestDataFromJson() {
-        if let path = Bundle.main.path(forResource: "studyList", ofType: "json") {
+    func populateTestDataFromJson(fileName: String) {
+        if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
             do {
                 let dataJson = try Data(contentsOf: URL(fileURLWithPath: path))
                 let jsonDict = try JSONSerialization.jsonObject(with: dataJson, options: .mutableContainers)
@@ -36,7 +38,7 @@ class StudyViewModel {
                     results.forEach { dict in
                         self.studyDataSource.append(StudyModel(title: dict["title"] as? String ?? "", studyDescription: dict["studyDescription"] as? String ?? "", thumbnail: dict["thumbnail"] as? String ?? "", currentCount: dict["currentCount"] as? Int ?? 0, fullCount: dict["fullCount"] as? Int ?? 0))
                     }
-
+                    
                 }
             } catch {
                 print(error)
@@ -50,5 +52,31 @@ class StudyViewModel {
         let test = studyDataSource[indexPath.row]
         cell.configure(thumbImage: test.thumbnail, title: test.title, description: test.studyDescription, currentCount: test.currentCount, fullCount: test.fullCount)
         return cell
+    }
+    
+    //MARK: - CollectionView Logic
+    
+    func numbersOfCollection() -> Int {
+        collectionDataSource.count
+    }
+    
+    func collectionSelect(at index: Int) -> String {
+        collectionDataSource[index]
+    }
+    
+    func configureCollectionCell(in collectionView: UICollectionView, for indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell: StudyCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "StudyCollectionViewCell", for: indexPath) as? StudyCollectionViewCell
+        else { fatalError("cannot find cell") }
+        cell.configure(title: collectionSelect(at: indexPath.row))
+        return cell
+    }
+    
+    func topicFind(for indexPath: IndexPath) -> String {
+        collectionDataSource[indexPath.row].lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    func fetchRoomByCollection(topics: String) {
+        studyDataSource = []
+        populateTestDataFromJson(fileName: topics.lowercased())
     }
 }

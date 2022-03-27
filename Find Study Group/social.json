@@ -1,0 +1,19 @@
+{
+    "studyList": [
+        {
+            "title": "social Study",
+            "studyDescription": "Looking for student who is interested in iOS!! Feel free to join our study group!!!!",
+            "thumbnail": "socialImage1",
+            "currentCount": 3,
+            "fullCount": 9
+        },
+        {
+            "title": "social Study2",
+            "studyDescription": "Let's study social ",
+            "thumbnail": "socialImage2",
+            "currentCount": 4,
+            "fullCount": 15
+        }
+    ]
+}
+

@@ -1,16 +1,16 @@
 {
     "studyList": [
         {
-            "title": "title 1",
-            "studyDescription": "studyDescription 1",
-            "thumbnail": "example",
+            "title": "iOS Study",
+            "studyDescription": "Looking for student who is interested in iOS!! Feel free to join our study group!!!!",
+            "thumbnail": "computerImage1",
             "currentCount": 1,
             "fullCount": 10
         },
         {
-            "title": "title 2",
-            "studyDescription": "studyDescription 2",
-            "thumbnail": "example",
+            "title": "Mac Study",
+            "studyDescription": "Who is looking for MAC!!!",
+            "thumbnail": "computerImage2",
             "currentCount": 1,
             "fullCount": 4
         },
@@ -34,13 +34,6 @@
             "thumbnail": "example",
             "currentCount": 5,
             "fullCount": 10
-        },
-        {
-            "title": "title 1",
-            "studyDescription": "studyDescription 6",
-            "thumbnail": "example",
-            "currentCount": 2,
-            "fullCount": 5
         }
     ]
 }

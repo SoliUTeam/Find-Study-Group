@@ -10,7 +10,11 @@ import UIKit
 
 class StudyTableViewCell: UITableViewCell {
     
-    @IBOutlet private weak var thumbImage: UIImageView!
+    @IBOutlet private weak var thumbImage: UIImageView! {
+        didSet {
+            self.thumbImage.layer.cornerRadius = 5
+        }
+    }
     @IBOutlet private weak var title: UILabel!
     @IBOutlet private weak var studyDescription: UILabel!
     @IBOutlet private weak var userCount: UILabel!

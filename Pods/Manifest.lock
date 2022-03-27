@@ -15,6 +15,7 @@ DEPENDENCIES:
   - RxCocoa
   - RxSwift
   - SnapKit
+  - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
@@ -33,6 +34,6 @@ SPEC CHECKSUMS:
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 48bd9e3f65b30c096bb3ee5a64965a2552d6192e
+PODFILE CHECKSUM: 251b5e0fbd44abaa1b2a6daf82983d06ab1754c7
 
 COCOAPODS: 1.11.2
