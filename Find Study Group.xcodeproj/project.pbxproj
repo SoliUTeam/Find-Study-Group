@@ -17,7 +17,6 @@
 		955F0BBD27F0604800E40A74 /* StudyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F0BBC27F0604700E40A74 /* StudyCollectionViewCell.swift */; };
 		955F0BBF27F062DF00E40A74 /* social.json in Resources */ = {isa = PBXBuildFile; fileRef = 955F0BBE27F062DF00E40A74 /* social.json */; };
 		955F0BC127F109EB00E40A74 /* StudyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F0BC027F109EB00E40A74 /* StudyDetailViewController.swift */; };
-		955F0BC327F11F2400E40A74 /* StudyTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F0BC227F11F2300E40A74 /* StudyTableViewModel.swift */; };
 		955F0BC527F12C2000E40A74 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 955F0BC427F12C2000E40A74 /* all.json */; };
 		955F0BC727F12D7B00E40A74 /* engr.json in Resources */ = {isa = PBXBuildFile; fileRef = 955F0BC627F12D7B00E40A74 /* engr.json */; };
 		95E4E2EF27BDEFE0002EBDA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4E2EE27BDEFE0002EBDA0 /* AppDelegate.swift */; };
@@ -44,7 +43,6 @@
 		955F0BBC27F0604700E40A74 /* StudyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCollectionViewCell.swift; sourceTree = "<group>"; };
 		955F0BBE27F062DF00E40A74 /* social.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = social.json; sourceTree = "<group>"; };
 		955F0BC027F109EB00E40A74 /* StudyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDetailViewController.swift; sourceTree = "<group>"; };
-		955F0BC227F11F2300E40A74 /* StudyTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudyTableViewModel.swift; path = ../../../../../.Trash/StudyTableViewModel.swift; sourceTree = "<group>"; };
 		955F0BC427F12C2000E40A74 /* all.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
 		955F0BC627F12D7B00E40A74 /* engr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = engr.json; sourceTree = "<group>"; };
 		95E4E2EB27BDEFE0002EBDA0 /* Find Study Group.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Study Group.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,7 +151,6 @@
 				955F0BAB27ED7C7F00E40A74 /* StudyViewModel.swift */,
 				955F0BAF27ED7DAD00E40A74 /* StudyModel.swift */,
 				955F0BB127ED7E5700E40A74 /* StudyTableViewCell.swift */,
-				955F0BC227F11F2300E40A74 /* StudyTableViewModel.swift */,
 				955F0BBC27F0604700E40A74 /* StudyCollectionViewCell.swift */,
 				955F0BC027F109EB00E40A74 /* StudyDetailViewController.swift */,
 			);
@@ -298,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				95E4E2F327BDEFE0002EBDA0 /* StudyViewController.swift in Sources */,
-				955F0BC327F11F2400E40A74 /* StudyTableViewModel.swift in Sources */,
 				955F0BBD27F0604800E40A74 /* StudyCollectionViewCell.swift in Sources */,
 				95E4E2EF27BDEFE0002EBDA0 /* AppDelegate.swift in Sources */,
 				95E4E2F127BDEFE0002EBDA0 /* SceneDelegate.swift in Sources */,
@@ -456,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M5Z7JPLW6N;
@@ -475,6 +472,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dennis-hong.Find-Study-Group";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -487,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M5Z7JPLW6N;
@@ -506,6 +505,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dennis-hong.Find-Study-Group";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
