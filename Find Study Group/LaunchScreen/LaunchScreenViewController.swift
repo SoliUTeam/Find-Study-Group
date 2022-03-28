@@ -20,10 +20,12 @@ class LaunchScreenViewController: UIViewController {
             self.navigateToHome()
         })
     }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
+    
     private func noMessageAnimation() {
             animationView = .init(name: "together")
             animationView!.frame = view.bounds
@@ -37,8 +39,6 @@ class LaunchScreenViewController: UIViewController {
     private func navigateToHome() {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let homeViewController = storyboard.instantiateViewController(identifier: "study") as? UITabBarController else { return }
-        
-        
         self.navigationController?.pushViewController(homeViewController, animated: true)
     }
 }

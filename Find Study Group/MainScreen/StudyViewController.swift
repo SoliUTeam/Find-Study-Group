@@ -27,7 +27,7 @@ class StudyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.populateTestDataFromJson(fileName: "computer")
+        viewModel.populateTestDataFromJson(fileName: "all")
     }
     
     @IBAction func plusBtnTapped(_ sender: UIButton) {
@@ -45,6 +45,16 @@ extension StudyViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         viewModel.configureTestCell(in: tableView, for: indexPath)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let detailViewController = storyboard.instantiateViewController(identifier: "StudyDetailViewController") as? StudyDetailViewController else { return }
+        detailViewController.studyDataSource = viewModel.studyDataSource[indexPath.row]
+        self.navigationController?.pushViewController(detailViewController, animated: true)
+        
+    }
+    
 }
 
 // MARK: - CollectionView configure

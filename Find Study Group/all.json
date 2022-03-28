@@ -1,0 +1,68 @@
+{
+    "studyList": [
+        {
+            "title": "ENGR 1010 Study",
+            "studyDescription": "Let's study Python together",
+            "thumbnail": "pythonImage",
+            "currentCount": 20,
+            "fullCount": 30
+        },
+        {
+            "title": "iOS Study",
+            "studyDescription": "Looking for student who is interested in iOS!! Feel free to join our study group!!!!",
+            "thumbnail": "computerImage1",
+            "currentCount": 1,
+            "fullCount": 10
+        },
+        {
+            "title": "Mac Study",
+            "studyDescription": "Who is looking for MAC!!!",
+            "thumbnail": "computerImage2",
+            "currentCount": 1,
+            "fullCount": 4
+        },
+        {
+            "title": "ENGR 2000 Study room",
+            "studyDescription": "Let's study together",
+            "thumbnail": "engrImage2",
+            "currentCount": 15,
+            "fullCount": 20
+        },
+        {
+            "title": "social Study",
+            "studyDescription": "Looking for student who is interested in iOS!! Feel free to join our study group!!!!",
+            "thumbnail": "socialImage1",
+            "currentCount": 3,
+            "fullCount": 9
+        },
+        {
+            "title": "social Study2",
+            "studyDescription": "Let's study social ",
+            "thumbnail": "socialImage2",
+            "currentCount": 4,
+            "fullCount": 15
+        },
+        {
+            "title": "title 1",
+            "studyDescription": "studyDescription 3",
+            "thumbnail": "example",
+            "currentCount": 1,
+            "fullCount": 9
+        },
+        {
+            "title": "title 1",
+            "studyDescription": "studyDescription 4",
+            "thumbnail": "example",
+            "currentCount": 1,
+            "fullCount": 10
+        },
+        {
+            "title": "title 2",
+            "studyDescription": "studyDescription 5",
+            "thumbnail": "example",
+            "currentCount": 5,
+            "fullCount": 10
+        }
+    ]
+}
+

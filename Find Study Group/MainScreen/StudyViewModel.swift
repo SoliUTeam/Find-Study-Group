@@ -15,7 +15,7 @@ protocol StudyViewModelDelegate: AnyObject {
 class StudyViewModel {
     
      var studyDataSource = [StudyModel]()
-    private var collectionDataSource: [String] = ["Computer", "Social", "Bio", "Chemistry", "Book", "eSports", "Language"]
+    private var collectionDataSource: [String] = ["All", "ENGR","BISN", "Extra", "Computer", "Social", "Bio", "Chemistry", "Book", ]
     
     init(delegate: StudyViewModelDelegate) {
         self.delegate = delegate

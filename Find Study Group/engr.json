@@ -1,0 +1,19 @@
+{
+    "studyList": [
+        {
+            "title": "ENGR 1010 Study",
+            "studyDescription": "Let's study Python together",
+            "thumbnail": "pythonImage",
+            "currentCount": 20,
+            "fullCount": 30
+        },
+        {
+            "title": "ENGR 2000 Study room",
+            "studyDescription": "Let's study together",
+            "thumbnail": "engrImage2",
+            "currentCount": 15,
+            "fullCount": 20
+        }
+    ]
+}
+
